@@ -229,7 +229,7 @@ ul {
 /****************Main Panel***************/
 #panel-wrapper {
   padding: 20px;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh);
   position: absolute;
   right: 0;
   top: 0;
@@ -248,7 +248,7 @@ ul {
 }
 #panel-wrapper h1 {
   text-align: center;
-  margin-top: 75px;
+  margin-top: 65px;
   margin-bottom: 5%;
   color: #444;
   font-family: 'Lato', sans-serif;
@@ -270,12 +270,49 @@ ul {
   border-bottom: 3px solid #ffd993;
 }
 #panel-wrapper .content {
-  margin-bottom: 80px;
+  margin-bottom: 60px;
+}
+#panel-wrapper .content h3 {
+  margin-bottom: 1.25em;
 }
 #panel-wrapper .row {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
+}
+/****************Contact***************/
+#contact .form-group {
+  display: flex;
+  flex-flow: row wrap;
+}
+#contact form {
+  padding: 5%;
+  background: #282f44;
+  border-radius: 5px;
+}
+#contact form label {
+  margin-top: .75em;
+  color: #ffd993;
+}
+#contact form input {
+  color: #e5b04e;
+  border-radius: 2px;
+  display: inline-block;
+  width: 100%;
+  background: #4c5672;
+}
+#contact form textarea {
+  color: #e5b04e;
+  border-radius: 2px;
+  min-height: 200px;
+  background: #4c5672;
+}
+#contact form input:focus,
+#contact form textarea:focus {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2) !important;
+  color: #ffd993;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.85);
 }
 /****************Footer***************/
 #footer {
@@ -391,7 +428,8 @@ ul {
   flex-flow: row;
   justify-content: center;
 }
-.card-buttons a {
+.card-buttons a,
+.card-buttons button {
   font-family: 'Lato', sans-serif;
   display: inline-block;
   padding: 10px;
@@ -404,28 +442,34 @@ ul {
   border: 1.5px solid #F95959;
   border-radius: 2px;
 }
-.card-overlay .card-buttons a:hover {
+.card-overlay .card-buttons a:hover,
+.card-overlay .card-buttons button:hover {
   width: 60%;
   border: 1.5px solid #ddd;
 }
-.card-buttons a:hover {
+.card-buttons a:hover,
+.card-buttons button:hover {
   background: #ce4a4a;
 }
-.card-buttons a:active {
+.card-buttons a:active,
+.card-buttons button:active {
   transform: translateY(1px);
   width: 58% !important;
   background: #b23737;
 }
 .card-buttons a,
+.card-buttons button,
 .card-buttons i {
   transition: all 300ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
   color: #fefefe;
 }
-.card-buttons a:hover > i {
+.card-buttons a:hover > i,
+.card-buttons button:hover > i {
   margin-left: 75%;
   opacity: 1;
 }
-.card-buttons a i {
+.card-buttons a i,
+.card-buttons button i {
   opacity: 0;
   position: absolute;
   top: 6px;
