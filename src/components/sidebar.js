@@ -13,7 +13,7 @@ export default `
       <h3 class="text-center">profile</h3>
       <div class="tags">
         <ul>
-          <li><a class="active" href="#" data-page="works">works</a></li>
+          <li><a href="#" data-page="works">works</a></li>
           <li><a href="#" data-page="about">about</a></li>
           <li><a href="#" data-page="skills">skills</a></li>
           <li><a href="#" data-page="contact">contact</a></li>

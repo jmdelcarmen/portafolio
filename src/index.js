@@ -17,18 +17,28 @@ const panelTriggers = $('.tags a');
 // Panels for the SPA experience
 bindPanelTriggers(PanelWrapper, Panels, panelTriggers);
 function bindPanelTriggers(container, panels, triggers) {
-  $('#works').addClass('view'); //default panel
   triggers.each(function () {
     $(this).click(e => {
+      localStorage.setItem('page', $(this).data('page'))
+      const currentPage = localStorage.getItem('page');
       e.preventDefault();
       $(this).addClass('active').parent().siblings()
       .find('a').removeClass('active');
       displayFeaturedPanel(container, detailsOverlayController, sliderController)(
-        getPanel(panels, $(this).data('page'))
+        getPanel(panels, currentPage)
       );
     });
   });
 }
+//Gets page from localstorage to prevent going to default page
+displayFeaturedPanel(PanelWrapper, detailsOverlayController, sliderController)(getPanel(Panels, localStorage.getItem('page')));
+panelTriggers.each(function () {
+  const currentPage = localStorage.getItem('page') || 'works';
+  if($(this).data('page') === currentPage) {
+    $(this).addClass('active').parent().siblings()
+      .find('a').removeClass('active');
+  }
+});
 function getPanel(panels, sel) {
   return panels[sel];
 }
