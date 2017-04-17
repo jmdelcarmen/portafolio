@@ -19,7 +19,7 @@ bindPanelTriggers(PanelWrapper, Panels, panelTriggers);
 function bindPanelTriggers(container, panels, triggers) {
   triggers.each(function () {
     $(this).click(e => {
-      localStorage.setItem('page', $(this).data('page'))
+      localStorage.setItem('page', $(this).data('page'));
       const currentPage = localStorage.getItem('page');
       e.preventDefault();
       $(this).addClass('active').parent().siblings()
