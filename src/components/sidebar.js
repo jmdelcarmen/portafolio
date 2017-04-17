@@ -21,10 +21,10 @@ export default `
       </div>
       <div class="sidebar-section">
         <ul class="social-media">
-          <li class="social-media-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
-          <li class="social-media-item"><a href="#"><i class="fa fa-github"></i></a></li>
-          <li class="social-media-item"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-          <li class="social-media-item"><a href="#"><i class="fa fa-envelope-o"></i></a></li>
+          <li class="social-media-item"><a href="https://www.facebook.com/jesusmarco.delcarmen"><i class="fa fa-facebook"></i></a></li>
+          <li class="social-media-item"><a href="https://github.com/jmdelcarmen"><i class="fa fa-github"></i></a></li>
+          <li class="social-media-item"><a href="https://www.linkedin.com/in/jesus-marco-ii-del-carmen-0677b4124/"><i class="fa fa-linkedin"></i></a></li>
+          <li class="social-media-item"><a href="mailto:jesusmarcodelcarmen@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
         </ul>
         <div class="profile-desc">
         <p>I'm a Software Engineer that enjoys dealing with various front-end frameworks to integrate into today's modern web applications. </p>
